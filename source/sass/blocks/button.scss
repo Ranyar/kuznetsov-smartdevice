@@ -1,0 +1,25 @@
+.button {
+  flex-basis: 180px;
+  height: 45px;
+  border-radius: 5px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--contacts {
+  color: $basic-white;
+  background: none;
+  border: 1px solid $basic-white;
+  margin-bottom: 3px;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
