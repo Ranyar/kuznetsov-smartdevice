@@ -1,0 +1,19 @@
+.social {
+  flex-basis: 422px;
+}
+
+.social__logo {
+  margin-bottom: 50px;
+  display: block;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  margin-right: 16px;
+}

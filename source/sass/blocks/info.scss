@@ -1,0 +1,29 @@
+.info {
+  display: flex;
+  padding: 16px 26px 14px 21px;
+}
+
+.info__list {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: rgba($basic-black, 0.5);
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.info__item--rights {
+  margin-right: 75px;
+}
+
+.info__item--copyright {
+  margin-right: 142px;
+}
+
+.info__item--credits {
+  margin-left: auto;
+}

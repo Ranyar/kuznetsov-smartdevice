@@ -1,0 +1,12 @@
+.phones__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phones__item a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba($basic-black, 0.5);
+}

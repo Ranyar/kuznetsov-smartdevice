@@ -3,10 +3,22 @@
 @import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
+@import "blocks/page-body.scss";
 
 // ----- Header
 @import "blocks/page-header.scss";
 @import "blocks/contacts.scss";
+
+// ----- Main
+@import "blocks/page-main.scss";
+
+// ----- Footer
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/navigation.scss";
+@import "blocks/office.scss";
+@import "blocks/phones.scss";
+@import "blocks/info.scss";
 
 // ----- Other
 @import "blocks/button.scss";
