@@ -1,5 +1,10 @@
 .office {
   max-width: 333px;
+
+  @media (max-width: $tablet-max-width) {
+    flex-basis: 48%;
+    max-width: unset;
+  }
 }
 
 .office h2 {
@@ -11,6 +16,15 @@
   text-transform: uppercase;
   color: $basic-black;
   margin: 0 0 25px 0;
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 1px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 28px 0 28px;
+    margin: 0;
+  }
 }
 
 .office p {
@@ -18,4 +32,12 @@
   line-height: 25px;
   color: rgba($basic-black, 0.5);
   margin: 0;
+
+  @media (max-width: $mobile-max-width) {
+    padding-right: 3px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 4px;
+  }
 }

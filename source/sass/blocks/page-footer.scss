@@ -9,6 +9,15 @@
     height: 1px;
     background-color: rgba($footer-bar-grey, 0.2);
     bottom: 52px;
+
+    @media (max-width: $tablet-max-width) {
+      bottom: unset;
+      top: 141px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      top: 276px;
+    }
   }
 }
 
@@ -18,6 +27,16 @@
   padding: 65px 26px 55px 22px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 64px 23px 42px 25px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 62px 15px 42px 15px;
+    flex-direction: column;
+  }
 }
 
 .page-footer__info {

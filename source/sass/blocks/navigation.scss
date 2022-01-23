@@ -1,5 +1,24 @@
 .navigation {
   flex-basis: 657px;
+
+  @media (max-width: $tablet-max-width) {
+    flex-basis: 52%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: rgba($footer-bar-grey, 0.2);
+      bottom: 0;
+      left: -15px;
+    }
+  }
 }
 
 .navigation h2 {
@@ -11,6 +30,17 @@
   text-transform: uppercase;
   color: $basic-black;
   margin: 0 0 24px 0;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0 0 25px;
+    padding-left: 2px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 28px 0 28px;
+    cursor: pointer;
+    margin: 0;
+  }
 }
 
 .navigation__list {
@@ -19,13 +49,22 @@
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 28px;
+  }
 }
 
 .navigation__item {
   font-size: 15px;
   line-height: 25px;
   color: rgba($basic-black, 0.5);
-  width: 47%;
+  width: 37%;
+  margin-right: 9.893%;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
 }
 
 .navigation__item--company {
@@ -60,4 +99,18 @@
   order: 5;
   line-height: 26px;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: $tablet-max-width) {
+  .navigation__item--company,
+  .navigation__item--products,
+  .navigation__item--manufacturing,
+  .navigation__item--assembling,
+  .navigation__item--components,
+  .navigation__item--delivery,
+  .navigation__item--contacts {
+    order: unset;
+    line-height: 25px;
+    letter-spacing: inherit;
+  }
 }
