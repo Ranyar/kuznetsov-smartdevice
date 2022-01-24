@@ -1,0 +1,60 @@
+.intro {
+  background-color: $basic-black;
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+  max-width: 1480px;
+  padding: 0 29px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/plata-desktop.png");
+    width: 705px;
+    height: 515px;
+    top: 258px;
+    left: 54%;
+  }
+}
+
+.intro__content {
+  max-width: 718px;
+  padding-top: 194px;
+  padding-bottom: 275px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro__content h1 {
+  margin: 0 0 29px 0;
+  padding: 0;
+  font-family: Roboto Condensed, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+.intro__content p {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: $basic-white;
+  padding: 0 0 0 98px;
+  margin: 0 0 43px 0;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: $basic-white;
+    top: 16px;
+    left: 4px;
+  }
+}

@@ -23,3 +23,17 @@
     display: none;
   }
 }
+
+.button--intro {
+  color: $basic-white;
+  flex-basis: 407px;
+  height: 55px;
+  background-color: $basic-accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 98px;
+}
