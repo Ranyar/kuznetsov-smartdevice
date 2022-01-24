@@ -5,6 +5,20 @@
     flex-basis: 48%;
     max-width: unset;
   }
+
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: rgba(98,105,98,.2);
+      bottom: 0;
+      left: -15px;
+    }
+  }
 }
 
 .office h2 {
@@ -24,6 +38,19 @@
   @media (max-width: $mobile-max-width) {
     padding: 28px 0 28px;
     margin: 0;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../../img/icon-minus.svg");
+      width: 16px;
+      height: 1px;
+      background-repeat: no-repeat;
+      right: 2px;
+      top: 36px;
+    }
   }
 }
 
