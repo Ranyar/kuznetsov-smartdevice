@@ -1,8 +1,63 @@
-.accordion--nojs p {
+.accordion--nojs h2 {
+
+  @media (max-width: $mobile-max-width) {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../../img/icon-minus.svg");
+      width: 16px;
+      height: 1px;
+      background-repeat: no-repeat;
+      right: 2px;
+      top: 36px;
+    }
+  }
+}
+
+.accordion--nojs div {
   display: block;
 }
 
-.accordion__content {
-  display: flex;
-  flex-wrap: wrap;
+@media (max-width: $mobile-max-width) {
+
+  .accordion__content {
+    display: none;
+  }
+}
+
+.accordion__content--show {
+  display: block;
+}
+
+.accordion--minus h2 {
+  @media (max-width: $mobile-max-width) {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../../img/icon-minus.svg");
+      width: 16px;
+      height: 1px;
+      background-repeat: no-repeat;
+      right: 2px;
+      top: 36px;
+    }
+  }
+}
+
+.accordion.accordion--plus h2 {
+  @media (max-width: $mobile-max-width) {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../../img/icon-plus.svg");
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      right: 2px;
+      top: 36px;
+    }
+  }
 }

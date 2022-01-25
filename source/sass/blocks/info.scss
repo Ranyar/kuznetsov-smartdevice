@@ -6,7 +6,7 @@
     padding-left: 27px;
   }
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $mobile-max-width) {
     padding: 28px 21px 14px 21px;
   }
 }
@@ -37,7 +37,7 @@
 }
 
 .info__item--rights {
-  margin-right: 75px;
+  margin-right: 5.307%;
 
   @media (max-width: $tablet-max-width) {
     display: none;
@@ -45,7 +45,7 @@
 }
 
 .info__item--copyright {
-  margin-right: 142px;
+  margin-right: 9.9231%;
 
   @media (max-width: $tablet-max-width) {
     margin-right: 0;

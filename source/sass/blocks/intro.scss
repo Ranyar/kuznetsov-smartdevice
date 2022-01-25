@@ -6,6 +6,8 @@
   margin: 0 auto;
   max-width: 1480px;
   padding: 0 29px;
+  position: relative;
+  overflow: hidden;
 
   &:after {
     position: absolute;

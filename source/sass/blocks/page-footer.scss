@@ -28,9 +28,20 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $tablet-max-width) and (min-width: $tablet-width) {
     padding: 64px 23px 42px 25px;
     flex-wrap: wrap;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: rgba(98,105,98,.2);
+      bottom: 5px;
+      left: 0;
+    }
   }
 
   @media (max-width: $mobile-max-width) {
