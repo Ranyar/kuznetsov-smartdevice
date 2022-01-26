@@ -36,4 +36,28 @@
   line-height: 19px;
   text-align: center;
   margin-left: 98px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: 110px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-left: 3px;
+  }
+}
+
+.button--intro span:first-child {
+  display: block;
+
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.button--intro span:last-child {
+  display: none;
+
+  @media (max-width: $mobile-max-width) {
+    display: block;
+  }
 }

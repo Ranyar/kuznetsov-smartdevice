@@ -6,36 +6,18 @@
 .intro__wrapper {
   margin: 0 auto;
   max-width: 1480px;
+  min-height: 758px;
   padding: 0 29px;
   position: relative;
 
-  &:after {
-    position: absolute;
-    content: "";
-    background-image: url("../../img/plata-desktop.png");
-    width: 705px;
-    height: 515px;
-    top: 138px;
-    left: 55.25%;
-    z-index: 1;
-
-    @media (max-width: $tablet-max-width) {
-      background-image: url("../../img/plata-tablet.png");
-      width: 465px;
-      height: 340px;
-      background-repeat: no-repeat;
-    }
+  @media (max-width: $tablet-max-width) {
+    min-height: 607px;
   }
-}
 
-.intro__content {
-  max-width: 55%;
-  padding-top: 194px;
-  padding-bottom: 275px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 1;
+  @media (max-width: $mobile-max-width) {
+    padding: 0 15px;
+    min-height: 587px;
+  }
 
   &:before {
     position: absolute;
@@ -44,7 +26,23 @@
     width: 373px;
     height: 377px;
     top: 262px;
-    left: 99.8%;
+    left: 54.7%;
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../../img/polygon-header-small-tablet.svg");
+      width: 294px;
+      height: 297px;
+      top: 88px;
+      left: 57.1%;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      background-image: url("../../img/polygon-header-small-mobile.svg");
+      width: 281px;
+      height: 284px;
+      top: 93px;
+      left: 47.4%;
+    }
   }
 
   &:after {
@@ -54,7 +52,74 @@
     width: 636px;
     height: 640px;
     top: -2px;
-    left: 104.2%;
+    left: 57%;
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../../img/polygon-header-big-tablet.svg");
+      width: 502px;
+      height: 505px;
+      top: -77px;
+      left: 60.55%;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      background-image: url("../../img/polygon-header-big-mobile.svg");
+      width: 479px;
+      height: 482px;
+      top: -106px;
+      left: 59%;
+    }
+  }
+}
+
+.intro__content {
+  max-width: 55%;
+  padding-top: 194px;
+  padding-bottom: 181px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 108px;
+    padding-bottom: 163px;
+    max-width: 68.7%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 226px;
+    padding-bottom: 70px;
+    max-width: 100%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/plata-desktop.png");
+    width: 705px;
+    height: 515px;
+    top: 138px;
+    left: 100.9%;
+    z-index: -1;
+
+    @media (max-width: $tablet-max-width) {
+      background-image: url("../../img/plata-tablet.png");
+      width: 465px;
+      height: 340px;
+      background-repeat: no-repeat;
+      top: 33px;
+      left: 98.25%;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      background-image: url("../../img/plata-mobile.png");
+      width: 301px;
+      height: 220px;
+      top: 32px;
+      left: unset;
+      right: -7.5%;
+    }
   }
 }
 
@@ -69,6 +134,20 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 29px;
+    padding-left: 59px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 40px;
+    line-height: 47px;
+    padding: 0;
+    margin-bottom: 27px;
+  }
 }
 
 .intro__content p {
@@ -80,6 +159,20 @@
   padding: 0 0 0 98px;
   margin: 0 0 43px 0;
 
+  @media (max-width: $tablet-max-width) {
+    font-size: 18px;
+    line-height: 156.8%;
+    padding-left: 110px;
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 51px;
+    font-size: 16px;
+    line-height: 156.8%;
+    margin-bottom: 40px;
+  }
+
   &:before {
     position: absolute;
     content: "";
@@ -88,5 +181,16 @@
     background-color: $basic-white;
     top: 16px;
     left: 4px;
+
+    @media (max-width: $tablet-max-width) {
+      width: 33px;
+      top: 16px;
+      left: 62px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      top: 15px;
+      left: 3px;
+    }
   }
 }
