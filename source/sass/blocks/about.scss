@@ -1,0 +1,40 @@
+.about {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/polygon-about-center.svg");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 715px;
+    top: 147px;
+    left: 29.1%;
+
+    @media (max-width: $tablet-max-width) {
+      top: 90px;
+      left: 27.4%;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      left: -37.6%;
+      bottom: 163px;
+      top: unset;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/polygon-about-left.svg");
+      background-repeat: no-repeat;
+      width: 636px;
+      height: 715px;
+      top: 445px;
+      right: 82.3%;
+    }
+  }
+}
