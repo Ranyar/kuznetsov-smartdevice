@@ -19,7 +19,7 @@
 
     @media (max-width: $mobile-max-width) {
       left: -37.6%;
-      bottom: 163px;
+      bottom: 389px;
       top: unset;
     }
   }
@@ -35,6 +35,7 @@
       height: 715px;
       top: 445px;
       right: 82.3%;
+      z-index: -1;
     }
   }
 }

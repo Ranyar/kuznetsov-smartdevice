@@ -11,6 +11,9 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button--contacts {
@@ -29,9 +32,6 @@
   flex-basis: 407px;
   height: 55px;
   background-color: $basic-accent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -59,5 +59,17 @@
 
   @media (max-width: $mobile-max-width) {
     display: block;
+  }
+}
+
+.button--company {
+  flex-basis: 180px;
+  height: 45px;
+  border: 1px solid $basic-accent;
+  color: $basic-accent;
+  border-radius: 5px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: 2px;
   }
 }
