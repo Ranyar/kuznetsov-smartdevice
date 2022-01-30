@@ -6,6 +6,14 @@
   margin: 0 auto;
   max-width: 1210px;
   padding: 88px 20px 20px 20px;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 50px 24px 78px 26px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 50px 15px 64px 15px;
+  }
 }
 
 .services h2 {
@@ -16,6 +24,20 @@
   line-height: 51px;
   color: $basic-white;
   margin: 0 0 52px 0;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 32px;
+    line-height: 140.62%;
+    padding-right: 88px;
+    margin: 0 0 49px 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 28px;
+    line-height: 140.62%;
+    padding: 0 0 0 10px;
+    margin: 0 0 41px 0;
+  }
 }
 
 .services__list {
@@ -24,6 +46,16 @@
   column-gap: 2.6%;
   padding: 0;
   margin: 0;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+    column-gap: unset;
+    row-gap: 46px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    row-gap: 30px;
+  }
 }
 
 .services__item {
@@ -33,6 +65,7 @@
 
   &:hover {
     background-color: $basic-accent;
+    transition-duration: 0.3s;
   }
 
   &--production {
@@ -57,6 +90,8 @@
   }
 
   @media (max-width: $tablet-max-width) {
+    width: 100%;
+    height: 256px;
 
     &--production {
       background-image: url("../../img/production-tablet.png");
@@ -70,6 +105,20 @@
       background-image: url("../../img/components-tablet.png");
     }
   }
+
+  @media (max-width: $mobile-max-width) {
+    &--production {
+      background-image: url("../../img/production-mobile.png");
+    }
+
+    &--assembling {
+      background-image: url("../../img/assembling-mobile.png");
+    }
+
+    &--components {
+      background-image: url("../../img/components-mobile.png");
+    }
+  }
 }
 
 .services__item a {
@@ -78,6 +127,14 @@
   position: relative;
   width: 100%;
   height: 100%;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 40px 0 0 45px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 20px 0 0 35px;
+  }
 
   &:after {
     position: absolute;
@@ -102,4 +159,23 @@
   color: $basic-white;
   margin: 0;
   padding-right: 153px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-right: 502px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-right: 82px;
+  }
+}
+
+.services__item--components a {
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 30px;
+  }
 }
