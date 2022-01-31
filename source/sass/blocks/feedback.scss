@@ -1,0 +1,229 @@
+.feedback {
+  background-color: $basic-accent;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/polygon-header-small.svg");
+    width: 373px;
+    height: 377px;
+    top: 204px;
+    left: 9.1%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/polygon-header-big.svg");
+    width: 636px;
+    height: 640px;
+    top: -60px;
+    left: 10.9%;
+  }
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  max-width: 1210px;
+  padding: 90px 20px 113px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/polygon-footer-right-top.svg");
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 234px;
+    top: 93px;
+    right: 2.3%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/polygon-footer-right-bottom.svg");
+    background-repeat: no-repeat;
+    width: 373px;
+    height: 373px;
+    top: 288px;
+    left: 89.45%;
+  }
+}
+
+.feedback h2 {
+  font-family: Roboto Condensed, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic-white;
+  margin: 0 0 11px 0;
+  padding-right: 30px;
+}
+
+.feedback p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-white;
+  margin: 0 0 51px 0;
+  padding-right: 253px;
+}
+
+.feedback__form {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/airplane.png");
+    background-repeat: no-repeat;
+    width: 511px;
+    height: 288px;
+    top: -64px;
+    left: unset;
+    right: 120%;
+    z-index: 1;
+  }
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  margin-bottom: 38px;
+}
+
+.feedback__field {
+  width: 47.45%;
+  background-color: $basic-accent;
+  z-index: 1;
+}
+
+.feedback__field--question {
+  width: 100%;
+}
+
+.feedback__field input,
+.feedback__field textarea {
+  background: rgba($basic-white, 0.1);
+  width: 100%;
+  padding: 12px 12px 16px 16px;
+}
+
+.feedback__form input,
+.feedback__field textarea {
+  color: $basic-white;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+}
+
+.feedback__field input {
+
+  &::-webkit-input-placeholder {
+    color: $basic-white;
+  }
+
+  &:-ms-input-placeholder {
+    color: $basic-white;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-white;
+  }
+}
+
+.feedback__field textarea {
+  min-height: 154px;
+
+  &::-webkit-input-placeholder {
+    color: $basic-white;
+  }
+
+  &::-ms-input-placeholder {
+    color: $basic-white;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-white;
+  }
+}
+
+.feedback__submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__agreement {
+  flex-basis: 262px;
+  position: relative;
+
+  & label {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba($basic-white, 0.8);
+    padding-left: 32px;
+    padding-top: 3px;
+    display: block;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  & input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  & span {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/checkbox-unchecked.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.feedback__input:checked + .feedback__checkbox {
+  background-image: url("../../img/checkbox-checked.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.feedback__input:focus + .feedback__checkbox,
+.feedback__input:hover + .feedback__checkbox {
+  opacity: 0.5;
+}
+
+.feedback__input:checked:focus + .feedback__checkbox,
+.feedback__input:checked:hover + .feedback__checkbox {
+  opacity: 0.5;
+}
+
+.feedback__input:active + .feedback__checkbox {
+  opacity: 0.8;
+}
+
+.feedback__input:checked:active + .feedback__checkbox {
+  opacity: 0.8;
+}

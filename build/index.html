@@ -133,6 +133,38 @@
         </ul>
       </div>
     </section>
+    <section class="page-main__feedback feedback">
+      <div class="feedback__wrapper">
+        <h2>Остались вопросы? Задайте их нам!</h2>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form class="feedback__form" id="feedback-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off">
+          <input type="hidden" name="form" value="feedback">
+          <ul class="feedback__list">
+            <li class="feedback__field feedback__field--name">
+              <label class="visually-hidden" for="feedback-name">Имя</label>
+              <input id="feedback-name" type="text" name="name" placeholder="Имя" required="">
+            </li>
+            <li class="feedback__field feedback__field--phone">
+              <label class="visually-hidden" for="feedback-phone">Телефон</label>
+              <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" required="">
+            </li>
+            <li class="feedback__field feedback__field--question">
+              <label class="visually-hidden" for="feedback-question">Ваш вопрос</label>
+              <textarea class="feedback__textarea" name="question" id="feedback-question" placeholder="Ваш вопрос" rows="5"></textarea>
+            </li>
+          </ul>
+          <div class="feedback__submit">
+            <button class="button button--feedback" type="submit">Задать вопрос</button>
+            <div class="feedback__agreement">
+              <label for="feedback-agreement">Я согласен на обработку персональных данных
+                <input class="feedback__input" id="feedback-agreement" type="checkbox" name="agreement" value="1" aria-invalid="false" checked="" required="">
+                <span class="feedback__checkbox"></span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

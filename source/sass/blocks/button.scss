@@ -73,3 +73,23 @@
     margin-left: 2px;
   }
 }
+
+.button--feedback {
+  flex-basis: 270px;
+  height: 45px;
+  border: 1px solid $basic-white;
+  color: $basic-white;
+  background-color: $basic-accent;
+  border-radius: 5px;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    color: $basic-accent;
+    background-color: $basic-white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
