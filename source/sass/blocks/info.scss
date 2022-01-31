@@ -50,12 +50,12 @@
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
     position: absolute;
-    top: 81px;
+    top: 36px;
     right: 209px;
   }
 
   @media (max-width: $mobile-max-width) {
-    top: 140px;
+    top: 124px;
     right: calc(50vw - 117px);
   }
 }
