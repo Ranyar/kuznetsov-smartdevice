@@ -70,21 +70,21 @@
 
   &--production {
     content: "";
-    background-image: url("../../img/production.png");
+    background-image: url(".././img/production.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--assembling {
     content: "";
-    background-image: url("../../img/assembling.png");
+    background-image: url(".././img/assembling.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--components {
     content: "";
-    background-image: url("../../img/components.png");
+    background-image: url(".././img/components.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -94,29 +94,29 @@
     height: 256px;
 
     &--production {
-      background-image: url("../../img/production-tablet.png");
+      background-image: url(".././img/production-tablet.png");
     }
 
     &--assembling {
-      background-image: url("../../img/assembling-tablet.png");
+      background-image: url(".././img/assembling-tablet.png");
     }
 
     &--components {
-      background-image: url("../../img/components-tablet.png");
+      background-image: url(".././img/components-tablet.png");
     }
   }
 
   @media (max-width: $mobile-max-width) {
     &--production {
-      background-image: url("../../img/production-mobile.png");
+      background-image: url(".././img/production-mobile.png");
     }
 
     &--assembling {
-      background-image: url("../../img/assembling-mobile.png");
+      background-image: url(".././img/assembling-mobile.png");
     }
 
     &--components {
-      background-image: url("../../img/components-mobile.png");
+      background-image: url(".././img/components-mobile.png");
     }
   }
 }
@@ -141,7 +141,7 @@
     content: "";
     width: 63px;
     height: 63px;
-    background-image: url("../../img/icon-arrow.svg");
+    background-image: url(".././img/icon-arrow.svg");
     background-color: $basic-accent;
     background-repeat: no-repeat;
     background-position: 50% 50%;

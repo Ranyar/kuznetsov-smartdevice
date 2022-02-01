@@ -6,7 +6,7 @@
   &:before {
     position: absolute;
     content: "";
-    background-image: url("../../img/polygon-header-small.svg");
+    background-image: url(".././img/polygon-header-small.svg");
     width: 373px;
     height: 377px;
     top: 204px;
@@ -20,7 +20,7 @@
   &:after {
     position: absolute;
     content: "";
-    background-image: url("../../img/polygon-header-big.svg");
+    background-image: url(".././img/polygon-header-big.svg");
     width: 636px;
     height: 640px;
     top: -60px;
@@ -54,7 +54,7 @@
   &:before {
     position: absolute;
     content: "";
-    background-image: url("../../img/polygon-footer-right-top.svg");
+    background-image: url(".././img/polygon-footer-right-top.svg");
     background-repeat: no-repeat;
     width: 234px;
     height: 234px;
@@ -69,7 +69,7 @@
   &:after {
     position: absolute;
     content: "";
-    background-image: url("../../img/polygon-footer-right-bottom.svg");
+    background-image: url(".././img/polygon-footer-right-bottom.svg");
     background-repeat: no-repeat;
     width: 373px;
     height: 373px;
@@ -137,7 +137,7 @@
   &:before {
     position: absolute;
     content: "";
-    background-image: url("../../img/airplane.png");
+    background-image: url(".././img/airplane.png");
     background-repeat: no-repeat;
     width: 511px;
     height: 288px;
@@ -307,13 +307,13 @@
     top: 4px;
     width: 16px;
     height: 16px;
-    background-image: url("../../img/checkbox-unchecked.svg");
+    background-image: url(".././img/checkbox-unchecked.svg");
     background-repeat: no-repeat;
   }
 }
 
 .feedback__input:checked + .feedback__checkbox {
-  background-image: url("../../img/checkbox-checked.svg");
+  background-image: url(".././img/checkbox-checked.svg");
   width: 16px;
   height: 16px;
 }

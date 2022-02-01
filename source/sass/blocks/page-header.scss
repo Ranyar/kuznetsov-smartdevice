@@ -8,18 +8,18 @@
     z-index: 0;
     width: 100%;
     min-height: 879px;
-    background-image: url("../../img/background-main-desktop.png");
+    background-image: url(".././img/background-main-desktop.png");
     background-position: top center;
     background-size: cover;
 
     @media (max-width: $tablet-max-width) {
-      background-image: url("../../img/background-main-tablet.png");
+      background-image: url(".././img/background-main-tablet.png");
       min-height: 686px;
     }
 
     @media (max-width: $mobile-max-width) {
       min-height: 648px;
-      background-image: url("../../img/background-main-mobile.png");
+      background-image: url(".././img/background-main-mobile.png");
     }
   }
 }

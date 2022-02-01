@@ -33,14 +33,14 @@
   &:before {
     position: absolute;
     content: "";
-    background-image: url("../../img/numbers-desktop.png");
+    background-image: url(".././img/numbers-desktop.png");
     width: 220px;
     height: 317px;
     top: 29px;
     left: -10px;
 
     @media (max-width: $tablet-max-width) {
-      background-image: url("../../img/numbers-tablet.png");
+      background-image: url(".././img/numbers-tablet.png");
       width: 251px;
       height: 361px;
       top: 25px;
