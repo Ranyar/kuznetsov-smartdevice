@@ -34,10 +34,15 @@
     position: absolute;
     content: "";
     background-image: url(".././img/numbers-desktop.png");
+    background-size: contain;
     width: 220px;
     height: 317px;
     top: 29px;
     left: -10px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(".././img/numbers-desktop@2x.png");
+    }
 
     @media (max-width: $tablet-max-width) {
       background-image: url(".././img/numbers-tablet.png");
@@ -45,6 +50,10 @@
       height: 361px;
       top: 25px;
       left: 0px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url(".././img/numbers-tablet@2x.png");
+      }
     }
 
     @media (max-width: $mobile-max-width) {

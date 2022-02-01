@@ -97,11 +97,16 @@
     position: absolute;
     content: "";
     background-image: url(".././img/plata-desktop.png");
+    background-size: contain;
     width: 705px;
     height: 515px;
     top: 138px;
     left: 100.9%;
     z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(".././img/plata-desktop@2x.png");
+    }
 
     @media (max-width: $tablet-max-width) {
       background-image: url(".././img/plata-tablet.png");
@@ -110,6 +115,10 @@
       background-repeat: no-repeat;
       top: 33px;
       left: 98.25%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url(".././img/plata-tablet@2x.png");
+      }
     }
 
     @media (max-width: $mobile-max-width) {
@@ -119,6 +128,10 @@
       top: 32px;
       left: unset;
       right: -7.5%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url(".././img/plata-mobile@2x.png");
+      }
     }
   }
 }
@@ -192,5 +205,29 @@
       top: 15px;
       left: 3px;
     }
+  }
+}
+
+.intro__scroll {
+  position: absolute;
+  left: -34px;
+  bottom: 5%;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  opacity: .5;
+  transform: rotate(-90deg);
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
   }
 }

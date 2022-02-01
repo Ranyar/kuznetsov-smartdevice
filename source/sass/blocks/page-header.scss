@@ -12,14 +12,26 @@
     background-position: top center;
     background-size: cover;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(".././img/background-main-desktop@2x.png");
+    }
+
     @media (max-width: $tablet-max-width) {
       background-image: url(".././img/background-main-tablet.png");
       min-height: 686px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url(".././img/background-main-tablet@2x.png");
+      }
     }
 
     @media (max-width: $mobile-max-width) {
       min-height: 648px;
       background-image: url(".././img/background-main-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url(".././img/background-main-mobile@2x.png");
+      }
     }
   }
 }

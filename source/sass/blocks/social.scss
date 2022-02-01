@@ -45,6 +45,18 @@
 .social__item {
   margin-right: 16px;
 
+  &:hover,
+  &:focus {
+
+    & path {
+      fill: $basic-accent;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
   @media (max-width: $tablet-max-width) {
 
     &:last-child {
