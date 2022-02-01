@@ -102,3 +102,33 @@
     opacity: 0.8;
   }
 }
+
+.button--modal {
+  flex-basis: 270px;
+  height: 47px;
+  border: 1px solid $basic-white;
+  color: $basic-white;
+  background-color: $basic-accent;
+  border-radius: 5px;
+  z-index: 1;
+  flex-grow: 1;
+
+  @media (max-width: $tablet-max-width) {
+    flex-basis: 280px;
+    height: 47px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-basis: 290px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic-accent;
+    background-color: $basic-white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

@@ -30,3 +30,34 @@ for (let i=0; i < headers.length; i++) {
     }
   });
 }
+
+//----- Модалки
+
+const pageBody = document.querySelector('.page-body');
+const contactsButton = document.querySelector('.button--contacts');
+
+const modal = document.querySelector('.modal');
+const modalCallback = document.querySelector('.modal--callback');
+const nameCallback = modalCallback.querySelector('input[name="name"]');
+
+contactsButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modalCallback.classList.add('modal--show');
+  pageBody.classList.add('page-body--no-scroll');
+  nameCallback.focus();
+});
+
+window.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape' || evt.key === 'Esc') {
+    if (modalCallback.classList.contains('modal--show')) {
+      modalCallback.classList.remove('modal--show');
+    } pageBody.classList.remove('page-body--no-scroll');
+  }
+});
+
+modal.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('modal--show') || evt.target.classList.contains('modal__wrapper') || evt.target.classList.contains('modal__close')) {
+    modal.classList.remove('modal--show');
+    pageBody.classList.remove('page-body--no-scroll');
+  }
+});
