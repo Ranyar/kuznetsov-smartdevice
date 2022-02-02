@@ -16,4 +16,13 @@
   font-size: 15px;
   line-height: 25px;
   color: rgba($basic-black, 0.5);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

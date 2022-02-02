@@ -62,6 +62,7 @@
   width: 31.624%;
   height: 51.24vw;
   max-height: 620px;
+  background-color: rgba($services-background, 0.5);
 
   &:hover {
     background-color: $basic-accent;

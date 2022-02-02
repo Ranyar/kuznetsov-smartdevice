@@ -67,3 +67,16 @@
     margin-left: unset;
   }
 }
+
+.info__item--terms a {
+  color: rgba(27,45,55,.5);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

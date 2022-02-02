@@ -66,6 +66,19 @@
   }
 }
 
+.navigation__item a {
+  color: rgba(27,45,55,.5);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .navigation__item--company {
   order: 0;
 }
