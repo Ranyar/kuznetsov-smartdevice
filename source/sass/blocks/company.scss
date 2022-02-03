@@ -69,6 +69,7 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0 0 21px 0;
+  color: $basic-grey;
 
   @media (max-width: $tablet-max-width) {
     font-size: 32px;
@@ -89,6 +90,7 @@
   font-size: 16px;
   line-height: 22px;
   margin: 0 0 20px 0;
+  color: $basic-grey;
 
   @media (max-width: $tablet-max-width) {
     padding-left: 3px;
