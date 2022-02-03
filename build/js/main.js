@@ -97,25 +97,29 @@ if (modal) {
 
 // ----- Local storage для формы обратной связи
 
-const feedbackNameInput = document.getElementById(`feedback-name`);
-const feedbackPhoneInput = document.getElementById(`feedback-phone`);
-const feedbackQuestionTextarea = document.getElementById(`feedback-question`);
+const feedbackForm = document.querySelector(`.page-main__feedback`);
 
-feedbackNameInput.value = localStorage.getItem(`feedback-name`);
-feedbackPhoneInput.value = localStorage.getItem(`feedback-phone`);
-feedbackQuestionTextarea.value = localStorage.getItem(`feedback-question`);
+if (feedbackForm) {
+  const feedbackNameInput = document.getElementById(`feedback-name`);
+  const feedbackPhoneInput = document.getElementById(`feedback-phone`);
+  const feedbackQuestionTextarea = document.getElementById(`feedback-question`);
 
-feedbackNameInput.addEventListener(`input`, () => {
-  localStorage.setItem(`feedback-name`, feedbackNameInput.value);
-});
+  feedbackNameInput.value = localStorage.getItem(`feedback-name`);
+  feedbackPhoneInput.value = localStorage.getItem(`feedback-phone`);
+  feedbackQuestionTextarea.value = localStorage.getItem(`feedback-question`);
 
-feedbackPhoneInput.addEventListener(`input`, () => {
-  localStorage.setItem(`feedback-phone`, feedbackPhoneInput.value);
-});
+  feedbackNameInput.addEventListener(`input`, () => {
+    localStorage.setItem(`feedback-name`, feedbackNameInput.value);
+  });
 
-feedbackQuestionTextarea.addEventListener(`input`, () => {
-  localStorage.setItem(`feedback-question`, feedbackQuestionTextarea.value);
-});
+  feedbackPhoneInput.addEventListener(`input`, () => {
+    localStorage.setItem(`feedback-phone`, feedbackPhoneInput.value);
+  });
+
+  feedbackQuestionTextarea.addEventListener(`input`, () => {
+    localStorage.setItem(`feedback-question`, feedbackQuestionTextarea.value);
+  });
+}
 
 // ----- Маска с валидацией
 

@@ -32,6 +32,16 @@
   }
 }
 
+.feedback--modal {
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
 .feedback__wrapper {
   margin: 0 auto;
   max-width: 1210px;
@@ -82,6 +92,25 @@
   }
 }
 
+.feedback__wrapper--modal {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto auto auto;
+  max-width: 490px;
+  min-height: 605px;
+  padding: 30px 39px 0 39px;
+  align-items: unset;
+  background-color: $basic-accent;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
 .feedback h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -104,6 +133,12 @@
   }
 }
 
+.feedback--modal h2 {
+  font-size: 28px;
+  line-height: 140.62%;
+  margin: 0 0 12px 0;
+}
+
 .feedback p {
   font-size: 16px;
   line-height: 22px;
@@ -121,6 +156,11 @@
     padding: 0;
     margin: 0 0 26px 0;
   }
+}
+
+.feedback--modal p {
+  margin: 0 0 32px;
+  padding-right: 47px;
 }
 
 .feedback__form {
@@ -157,6 +197,12 @@
   }
 }
 
+.feedback__form--modal {
+  &::before {
+    display: none;
+  }
+}
+
 .feedback__list {
   list-style: none;
   padding: 0;
@@ -179,6 +225,11 @@
     row-gap: 31px;
     margin-bottom: 26px;
   }
+}
+
+.feedback__list--modal {
+  row-gap: 30px;
+  margin-bottom: 25px;
 }
 
 .feedback__field {
@@ -204,6 +255,10 @@
   }
 }
 
+.feedback__field--modal {
+  width: 100%;
+}
+
 .feedback__field--question {
   width: 100%;
 }
@@ -219,12 +274,29 @@
   }
 }
 
+.feedback__field--modal input,
+.feedback__field--modal textarea {
+  padding: 12px 24px 18px 24px;
+}
+
 .feedback__form input,
 .feedback__field textarea {
   color: $basic-white;
   font-size: 16px;
   line-height: 22px;
   border: none;
+}
+
+.feedback__form--modal input,
+.feedback__field--modal textarea {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .feedback__field input {
@@ -266,6 +338,10 @@
   }
 }
 
+.feedback__field--modal textarea {
+  min-height: 104px;
+}
+
 .feedback__submit {
   display: flex;
   justify-content: space-between;
@@ -278,6 +354,13 @@
     column-gap: 30px;
     justify-content: center;
   }
+}
+
+.feedback__submit--modal {
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 31px;
+  padding-bottom: 37px;
 }
 
 .feedback__agreement {
@@ -324,6 +407,15 @@
     height: 16px;
     background-image: url(".././img/checkbox-unchecked.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.feedback__agreement--modal {
+  flex-basis: 272px;
+  flex-grow: 1;
+
+  & label {
+    padding-left: 48px;
   }
 }
 

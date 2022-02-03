@@ -247,32 +247,32 @@
       </ul>
     </div>
   </footer>
-  <section class="modal modal--callback"><!-- Добавление класса modal--show показывает модалку -->
-    <div class="modal__wrapper">
+  <section class="feedback feedback--modal modal modal--callback"><!-- Добавление класса modal--show показывает модалку -->
+    <div class="feedback__wrapper feedback__wrapper--modal">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form class="modal__form" id="callback-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off">
+      <form class="feedback__form feedback__form--modal" id="callback-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off">
         <input type="hidden" name="form" value="callback">
-        <ul class="modal__list">
-          <li class="modal__field modal__field--name">
+        <ul class="feedback__list feedback__list--modal">
+          <li class="feedback__field feedback__field--modal">
             <label class="visually-hidden" for="modal-name">Имя</label>
             <input id="modal-name" type="text" name="name" placeholder="Имя" required>
           </li>
-          <li class="modal__field modal__field--phone">
+          <li class="feedback__field feedback__field--modal">
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input class="phone-input" id="modal-phone" type="tel" name="phone" placeholder="Телефон" required>
           </li>
-          <li class="modal__field modal__field--question">
+          <li class="feedback__field feedback__field--modal">
             <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
-            <textarea class="modal__textarea" name="question" id="modal-question" placeholder="Ваш вопрос" rows="3"></textarea>
+            <textarea class="feedback__textarea" name="question" id="modal-question" placeholder="Ваш вопрос" rows="3"></textarea>
           </li>
         </ul>
-        <div class="modal__submit">
+        <div class="feedback__submit feedback__submit--modal">
           <button class="button button--modal" type="submit">Отправить</button>
-          <div class="modal__agreement">
+          <div class="feedback__agreement feedback__agreement--modal">
             <label for="modal-agreement">Я согласен на обработку &nbsp;персональных данных
-              <input class="modal__input" id="modal-agreement" type="checkbox" name="agreement" value="1" aria-invalid="false" checked required>
-              <span class="modal__checkbox"></span>
+              <input class="feedback__input" id="modal-agreement" type="checkbox" name="agreement" value="1" aria-invalid="false" checked required>
+              <span class="feedback__checkbox"></span>
             </label>
           </div>
         </div>
