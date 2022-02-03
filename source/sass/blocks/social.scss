@@ -47,8 +47,8 @@
 
   &:hover,
   &:focus {
-    & path {
-      fill: $basic-accent;
+    & svg {
+      filter: $basic-accent-filter;
     }
   }
 

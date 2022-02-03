@@ -42,9 +42,7 @@ if (accordions) {
 
 const pageBody = document.querySelector(`.page-body`);
 const contactsButton = document.querySelector(`.button--contacts`);
-
 const modal = document.querySelector(`.modal`);
-
 
 if (modal) {
   const modalCallback = document.querySelector(`.modal--callback`);
