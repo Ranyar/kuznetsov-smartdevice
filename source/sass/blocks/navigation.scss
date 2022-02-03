@@ -8,7 +8,7 @@
   @media (max-width: $mobile-max-width) {
     position: relative;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100vw;
@@ -21,7 +21,7 @@
 }
 
 .navigation h2 {
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
@@ -59,7 +59,7 @@
   line-height: 25px;
   color: rgba($basic-black, 0.5);
   width: 37%;
-  margin-right: 9.893%;
+  margin-right: 9.89%;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
@@ -67,7 +67,7 @@
 }
 
 .navigation__item a {
-  color: rgba(27,45,55,.5);
+  color: rgba(27, 45, 55, 0.5);
 
   &:hover,
   &:focus {

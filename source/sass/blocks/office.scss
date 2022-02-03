@@ -9,12 +9,12 @@
   @media (max-width: $mobile-max-width) {
     position: relative;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100vw;
       height: 1px;
-      background-color: rgba(98,105,98,.2);
+      background-color: rgba(98, 105, 98, 0.2);
       bottom: 0;
       left: -15px;
     }
@@ -22,7 +22,7 @@
 }
 
 .office h2 {
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;

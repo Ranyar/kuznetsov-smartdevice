@@ -2,7 +2,7 @@
   flex-shrink: 0;
   position: relative;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -33,12 +33,12 @@
     flex-wrap: wrap;
     position: relative;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100vw;
       height: 1px;
-      background-color: rgba(98,105,98,.2);
+      background-color: rgba(98, 105, 98, 0.2);
       bottom: 5px;
       left: 0;
     }

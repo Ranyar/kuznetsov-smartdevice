@@ -17,7 +17,7 @@
 }
 
 .services h2 {
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -59,7 +59,7 @@
 }
 
 .services__item {
-  width: 31.624%;
+  width: 31.62%;
   height: 51.24vw;
   max-height: 620px;
   background-color: rgba($services-background, 0.5);
@@ -173,7 +173,7 @@
     padding: 20px 0 0 35px;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 63px;
@@ -188,7 +188,7 @@
 }
 
 .services__item h3 {
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -207,7 +207,6 @@
 }
 
 .services__item--components a {
-
   @media (max-width: $tablet-max-width) {
     padding-top: 50px;
   }

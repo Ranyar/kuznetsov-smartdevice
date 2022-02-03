@@ -1,8 +1,6 @@
 .accordion--nojs h2 {
-
   @media (max-width: $mobile-max-width) {
-
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       background: url(".././img/icon-minus.svg");
@@ -20,7 +18,6 @@
 }
 
 @media (max-width: $mobile-max-width) {
-
   .accordion__content {
     display: none;
   }
@@ -32,8 +29,7 @@
 
 .accordion--minus h2 {
   @media (max-width: $mobile-max-width) {
-
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       background: url(".././img/icon-minus.svg");
@@ -48,8 +44,7 @@
 
 .accordion.accordion--plus h2 {
   @media (max-width: $mobile-max-width) {
-
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       background: url(".././img/icon-plus.svg");

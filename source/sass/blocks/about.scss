@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-about-center.svg");
@@ -25,8 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       background-image: url(".././img/polygon-about-left.svg");

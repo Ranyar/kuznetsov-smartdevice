@@ -30,14 +30,13 @@
 }
 
 @media (max-width: $mobile-max-width) {
-
   .info__item {
     margin-bottom: 21px;
   }
 }
 
 .info__item--rights {
-  margin-right: 5.307%;
+  margin-right: 5.31%;
 
   @media (max-width: $tablet-max-width) {
     display: none;
@@ -45,7 +44,7 @@
 }
 
 .info__item--copyright {
-  margin-right: 9.9231%;
+  margin-right: 9.92%;
 
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
@@ -69,7 +68,7 @@
 }
 
 .info__item--terms a {
-  color: rgba(27,45,55,.5);
+  color: rgba(27, 45, 55, 0.5);
 
   &:hover,
   &:focus {

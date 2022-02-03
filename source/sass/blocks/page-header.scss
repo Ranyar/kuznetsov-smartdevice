@@ -13,9 +13,9 @@
     min-height: 686px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url(".././img/background-main-tablet@2x.png");
-      }
+      background-image: url(".././img/background-main-tablet@2x.png");
     }
+  }
 
   @media (max-width: $mobile-max-width) {
     min-height: 648px;

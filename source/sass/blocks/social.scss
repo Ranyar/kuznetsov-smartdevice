@@ -47,7 +47,6 @@
 
   &:hover,
   &:focus {
-
     & path {
       fill: $basic-accent;
     }
@@ -58,7 +57,6 @@
   }
 
   @media (max-width: $tablet-max-width) {
-
     &:last-child {
       margin-right: 0;
     }

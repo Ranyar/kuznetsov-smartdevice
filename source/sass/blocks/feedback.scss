@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-header-small.svg");
@@ -17,7 +17,7 @@
     }
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-header-big.svg");
@@ -51,7 +51,7 @@
     padding: 30px 15px 42px;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-footer-right-top.svg");
@@ -66,7 +66,7 @@
     }
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-footer-right-bottom.svg");
@@ -83,7 +83,7 @@
 }
 
 .feedback h2 {
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -134,7 +134,7 @@
     padding: 0;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background-image: url(".././img/airplane.png");

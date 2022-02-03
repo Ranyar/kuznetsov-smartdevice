@@ -18,7 +18,7 @@
     min-height: 587px;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-header-small.svg");
@@ -44,7 +44,7 @@
     }
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     background-image: url(".././img/polygon-header-big.svg");
@@ -92,7 +92,7 @@
     max-width: 100%;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     background-image: url(".././img/plata-desktop.png");
@@ -138,7 +138,7 @@
 .intro__content h1 {
   margin: 0 0 29px 0;
   padding: 0;
-  font-family: Roboto Condensed, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
@@ -185,7 +185,7 @@
     margin-bottom: 40px;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     width: 66px;
@@ -214,7 +214,7 @@
   font-size: 14px;
   line-height: 16px;
   color: $basic-white;
-  opacity: .5;
+  opacity: 0.5;
   transform: rotate(-90deg);
 
   &:focus,
