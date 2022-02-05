@@ -1,6 +1,6 @@
 .company {
   max-width: 1210px;
-  padding: 24px 25px 107px 200px;
+  padding: 24px 25px 109px 200px;
   position: relative;
   margin: 0 auto;
   min-height: 341px;
@@ -13,8 +13,8 @@
 
   @media (max-width: $tablet-max-width) {
     padding-left: 210px;
-    padding-top: 28px;
-    padding-bottom: 82px;
+    padding-top: 26px;
+    padding-bottom: 83px;
     min-height: 385px;
 
     & span:first-child {
@@ -101,7 +101,11 @@
   }
 
   &:last-of-type {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet-max-width) {
+      margin-bottom: 42px;
+    }
 
     @media (max-width: $mobile-max-width) {
       margin-bottom: 29px;

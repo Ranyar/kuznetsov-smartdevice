@@ -1,6 +1,6 @@
 .advantages {
   max-width: 1210px;
-  padding: 113px 20px 80px;
+  padding: 113px 20px 50px;
   position: relative;
   margin: 0 auto;
 
@@ -29,11 +29,11 @@
   }
 
   @media (max-width: $tablet-max-width) {
-    padding: 53px 24px 28px 24px;
+    padding: 53px 24px 0 24px;
   }
 
   @media (max-width: $mobile-max-width) {
-    padding: 37px 16px 37px 13px;
+    padding: 37px 16px 16px 13px;
   }
 }
 
@@ -43,15 +43,15 @@
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  column-gap: 2.56%;
-  row-gap: 30px;
+  justify-content: space-between;
+
 
   @media (max-width: $tablet-max-width) {
-    column-gap: 4%;
+
   }
 
   @media (max-width: $mobile-max-width) {
-    row-gap: 20px;
+
   }
 }
 
@@ -63,6 +63,7 @@
   cursor: pointer;
   min-height: 299px;
   background-color: $basic-white;
+  margin-bottom: 30px;
 
   @media (max-width: $tablet-max-width) {
     max-width: 47.92%;
@@ -73,6 +74,7 @@
   @media (max-width: $mobile-max-width) {
     max-width: unset;
     width: 100%;
+    margin-bottom: 20px;
   }
 
   &:hover {

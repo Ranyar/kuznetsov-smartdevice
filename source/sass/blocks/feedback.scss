@@ -54,7 +54,7 @@
   @media (max-width: $tablet-max-width) {
     align-items: center;
     max-width: 635px;
-    padding: 80px 20px 103px;
+    padding: 80px 20px 104px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -125,11 +125,12 @@
     font-size: 32px;
     line-height: 140.62%;
     align-self: baseline;
-    margin: 0 0 13px 0;
+    margin: 0 0 16px 0;
   }
 
   @media (max-width: $mobile-max-width) {
     font-size: 28px;
+    margin-bottom: 12px;
   }
 }
 
@@ -299,6 +300,10 @@
   }
 }
 
+.feedback textarea {
+  resize: none;
+}
+
 .feedback__field input {
 
   &::-webkit-input-placeholder {
@@ -354,6 +359,11 @@
     column-gap: 30px;
     justify-content: center;
   }
+
+  @media (max-width: $mobile-max-width) {
+    row-gap: unset;
+    column-gap: unset;
+  }
 }
 
 .feedback__submit--modal {
@@ -408,6 +418,10 @@
     background-image: url(".././img/checkbox-unchecked.svg");
     background-repeat: no-repeat;
   }
+
+  @media (max-width: $mobile-max-width) {
+    flex-basis: unset;
+  }
 }
 
 .feedback__agreement--modal {
@@ -423,6 +437,11 @@
   background-image: url(".././img/checkbox-checked.svg");
   width: 16px;
   height: 16px;
+}
+
+.feedback__checkbox,
+.feedback label {
+  cursor: pointer;
 }
 
 .feedback__input:focus + .feedback__checkbox,

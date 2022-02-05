@@ -129,7 +129,9 @@ window.addEventListener(`DOMContentLoaded`, function () {
     function mask(event) {
       let pos = input.selectionStart;
 
-      if (pos < 2) {
+      if (evt.key === 9) {
+        return;
+      } if (pos < 2) {
         event.preventDefault();
       }
 

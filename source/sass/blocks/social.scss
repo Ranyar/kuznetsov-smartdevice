@@ -1,5 +1,24 @@
 .social {
   flex-basis: 422px;
+  position: relative;
+  flex-wrap: wrap;
+
+  &::after {
+    @media (max-width: $tablet-max-width) {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: rgba($footer-bar-grey, 0.2);
+      bottom: -21px;
+      top: unset;
+      left: calc(-50vw + 50%);
+    }
+
+    @media (max-width: $mobile-max-width) {
+      bottom: -50px;
+    }
+  }
 
   @media (max-width: $tablet-max-width) {
     display: flex;
@@ -26,7 +45,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 77px;
+    margin-bottom: 22px;
     padding-right: 14px;
   }
 }
@@ -34,6 +53,8 @@
 .social__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 216px;
   margin: 0;
   padding: 0;
 
@@ -60,5 +81,25 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.social__copyright {
+  display: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: rgba($basic-black, 0.5);
+    text-transform: uppercase;
+    padding-left: 28px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 0;
+    margin-bottom: 31px;
   }
 }

@@ -5,14 +5,14 @@
 .services__wrapper {
   margin: 0 auto;
   max-width: 1210px;
-  padding: 88px 20px 128px 20px;
+  padding: 88px 20px 97px 20px;
 
   @media (max-width: $tablet-max-width) {
-    padding: 50px 24px 78px 26px;
+    padding: 50px 24px 33px 26px;
   }
 
   @media (max-width: $mobile-max-width) {
-    padding: 50px 15px 64px 15px;
+    padding: 50px 15px 35px 15px;
   }
 }
 
@@ -43,26 +43,23 @@
 .services__list {
   list-style: none;
   display: flex;
-  column-gap: 2.6%;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 
   @media (max-width: $tablet-max-width) {
     flex-direction: column;
     column-gap: unset;
-    row-gap: 46px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    row-gap: 30px;
   }
 }
 
 .services__item {
-  width: 31.62%;
+  width: 31.6%;
   height: 51.24vw;
   max-height: 620px;
   background-color: rgba($services-background, 0.5);
+  margin-bottom: 30px;
 
   &:hover {
     background-color: $basic-accent;
@@ -105,6 +102,7 @@
   @media (max-width: $tablet-max-width) {
     width: 100%;
     height: 256px;
+    margin-bottom: 46px;
 
     &--production {
       background-image: url(".././img/production-tablet.png");
@@ -132,6 +130,8 @@
   }
 
   @media (max-width: $mobile-max-width) {
+    margin-bottom: 30px;
+
     &--production {
       background-image: url(".././img/production-mobile.png");
 
