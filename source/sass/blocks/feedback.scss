@@ -2,34 +2,6 @@
   background-color: $basic-accent;
   position: relative;
   overflow: hidden;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url(".././img/polygon-header-small.svg");
-    width: 373px;
-    height: 377px;
-    top: 204px;
-    left: 9.1%;
-
-    @media (max-width: $tablet-max-width) {
-      display: none;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url(".././img/polygon-header-big.svg");
-    width: 636px;
-    height: 640px;
-    top: -60px;
-    left: 10.9%;
-
-    @media (max-width: $tablet-max-width) {
-      display: none;
-    }
-  }
 }
 
 .feedback--modal {
@@ -122,6 +94,34 @@
   color: $basic-white;
   margin: 0 0 11px 0;
   padding-right: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(".././img/polygon-header-small.svg");
+    width: 373px;
+    height: 377px;
+    top: 204px;
+    left: -14.9%;
+
+    @media (max-width: $tablet-max-width) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(".././img/polygon-header-big.svg");
+    width: 636px;
+    height: 640px;
+    top: -60px;
+    left: -12.1%;
+
+    @media (max-width: $tablet-max-width) {
+      display: none;
+    }
+  }
 
   @media (max-width: $tablet-max-width) {
     font-size: 32px;
