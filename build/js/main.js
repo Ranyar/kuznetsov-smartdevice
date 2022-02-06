@@ -70,6 +70,18 @@ if (modal) {
   });
 }
 
+// ----- Перехват фокуса в модальном окне
+
+const firstElement = document.querySelector(`#modal-name`);
+const lastElement = document.querySelector(`.modal__close`);
+
+lastElement.addEventListener(`keydown`, function (event) {
+  event.preventDefault();
+  if (event.keyCode === 9) {
+    firstElement.focus();
+  }
+});
+
 // ----- local storage для модального окна
 
 const modalNameInput = document.getElementById(`modal-name`);
