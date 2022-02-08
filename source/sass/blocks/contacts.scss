@@ -1,7 +1,6 @@
 .contacts {
   display: flex;
   flex-basis: 654px;
-  align-items: center;
 
   @media (max-width: $tablet-max-width) {
     flex-basis: 83px;
@@ -24,6 +23,7 @@
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
+    margin: 0;
   }
 }
 

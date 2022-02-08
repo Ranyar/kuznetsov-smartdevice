@@ -140,6 +140,14 @@
   font-size: 28px;
   line-height: 140.62%;
   margin: 0 0 12px 0;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
 }
 
 .feedback p {

@@ -44,7 +44,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0;
   margin: 0;
 
@@ -60,6 +60,11 @@
   max-height: 620px;
   background-color: rgba($services-background, 0.5);
   margin-bottom: 30px;
+  margin-right: 2.6%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   &:hover {
     background-color: $basic-accent;
@@ -103,6 +108,7 @@
     width: 100%;
     height: 256px;
     margin-bottom: 46px;
+    margin-right: 0;
 
     &--production {
       background-image: url(".././img/production-tablet.png");
