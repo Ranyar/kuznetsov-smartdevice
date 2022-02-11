@@ -14,6 +14,8 @@
       background-repeat: no-repeat;
       top: 45px;
       left: -153px;
+      -webkit-animation: rotation-left 30s linear infinite;
+      animation: rotation-left 30s linear infinite;
     }
 
     &::after {
@@ -25,6 +27,8 @@
       background-repeat: no-repeat;
       bottom: 61px;
       right: -401px;
+      -webkit-animation: rotation-right 30s linear infinite;
+      animation: rotation-right 30s linear infinite;
     }
   }
 

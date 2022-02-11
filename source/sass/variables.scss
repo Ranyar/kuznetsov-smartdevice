@@ -21,3 +21,23 @@ $desktop-width: 1024px;
 // retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+// ----- Spin
+
+@keyframes rotation-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

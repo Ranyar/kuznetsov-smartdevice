@@ -26,6 +26,8 @@
     height: 377px;
     top: 262px;
     left: 54.7%;
+    -webkit-animation: rotation-right 30s linear infinite;
+    animation: rotation-right 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       background-image: url(".././img/polygon-header-small-tablet.svg");
@@ -52,6 +54,8 @@
     height: 640px;
     top: -2px;
     left: 57%;
+    -webkit-animation: rotation-left 30s linear infinite;
+    animation: rotation-left 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       background-image: url(".././img/polygon-header-big-tablet.svg");

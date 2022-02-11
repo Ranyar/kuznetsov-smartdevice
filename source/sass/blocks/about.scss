@@ -11,6 +11,8 @@
     height: 715px;
     top: 147px;
     left: 29.1%;
+    -webkit-animation: rotation-left 30s linear infinite;
+    animation: rotation-left 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       top: 90px;
@@ -35,6 +37,8 @@
       top: 445px;
       right: 82.3%;
       z-index: -1;
+      -webkit-animation: rotation-right 30s linear infinite;
+      animation: rotation-right 30s linear infinite;
     }
   }
 }

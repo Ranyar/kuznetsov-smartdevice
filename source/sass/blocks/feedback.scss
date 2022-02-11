@@ -44,6 +44,8 @@
     height: 234px;
     top: 93px;
     right: -25.7%;
+    -webkit-animation: rotation-left 30s linear infinite;
+    animation: rotation-left 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       display: none;
@@ -59,6 +61,8 @@
     height: 373px;
     top: 288px;
     left: 112.6%;
+    -webkit-animation: rotation-right 30s linear infinite;
+    animation: rotation-right 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       display: none;
@@ -103,6 +107,8 @@
     height: 377px;
     top: 204px;
     left: -14.9%;
+    -webkit-animation: rotation-left 30s linear infinite;
+    animation: rotation-left 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       display: none;
@@ -117,6 +123,8 @@
     height: 640px;
     top: -60px;
     left: -12.1%;
+    -webkit-animation: rotation-right 30s linear infinite;
+    animation: rotation-right 30s linear infinite;
 
     @media (max-width: $tablet-max-width) {
       display: none;
